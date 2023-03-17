@@ -34,11 +34,11 @@
   border-radius: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  color: black ;
-  background-color: #adb5bd;
+  color: #adb5bd ;
+  background-color: black;
   max-width: 8%;
   margin: 30px;
-  font-size: 10px;
+  font-size: 15px;
   
   }
 
@@ -69,16 +69,130 @@
   position: relative;
 }
 
-    
-  
+input {
+  color: #495057;
+  font-style: italic;
+  background-color: #adb5bd;
+  border: none;
+  width: 100%;
+}
+
+input:focus{
+  border: none;
+  outline: none;
+
+}
+
+.notification {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  float: right;
+  margin: 20px;
+}
+
+.notification svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.notification .badge {
+  position: absolute;
+  top: 0;
+  right: -8;
+  background-color: red;
+  color: black;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: middle;
+}
+
+
+.down-arrow2 {
+    content: "";
+  background-image: url('chevon-down.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  top: 4px;
+  float: right;
+}
+
+
+.photo {
+  border-radius: 10px;
+  width: 200px; /* adjust this to the desired width of your photos */
+  height: auto;
+  margin: 0 10px; /* adjust this to the desired space between your photos */
+}
+
+
+
 
    </style>
    <body>
-    <div class="card1"> <span> Search </span> </div>
+    <!-- placeholder -->
+    <div class="card1"> <input placeholder="Search..."> </div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" class="photocard"> 
     <span class="spanclass">Home Page</span>
     <bold> <span class="oggiline"> Oggi </span></bold>
     <bold> <span class="crealine">Crea<span class="down-arrow"></span>    </span></bold>
+    <div class="notification">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm7-7.9c-.5-.6-1.2-1.1-2-1.1H7c-.8 0-1.5.5-2 1.1l-.7.9v1c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-1l-.7-.9z"/>
+        <path d="M0 0h24v24H0z" fill="none"/>
+      </svg>
+      <span class="badge">3</span>
+      <svg class="icon icon-tabler icon-tabler-message-circle-2" viewBox="0 0 24 24">
+        <path d="M3 20l1.3 -3.9a9 8 0 1 1 3.4 2.9l-4.7 1" />
+        <line x1="12" y1="12" x2="12" y2="12.01" />
+        <line x1="8" y1="12" x2="8" y2="12.01" />
+        <line x1="16" y1="12" x2="16" y2="12.01" />
+      </svg>
+      <span class="down-arrow2"></span>
+
+      
+        <img src="https://i.pinimg.com/564x/80/c5/93/80c5936ea24856e9dbd5ecd399f59525.jpg" class="photo">
+        <img src="https://i.pinimg.com/564x/35/b2/ca/35b2ca8b7f58822cd23fc37d59ac3cef.jpg" class="photo">
+        <img src="https://i.pinimg.com/564x/4b/69/88/4b69881bcedca8505d28831193ef8be5.jpg"class="photo">
+        <img src="https://i.pinimg.com/564x/49/f3/04/49f304cfa35fd06f1d485d924864b116.jpg" class="photo">
+        <img src="https://i.pinimg.com/564x/1d/26/35/1d26356439b260c283c92ddc0a241fad.jpg" class="photo">
+        <img src="https://i.pinimg.com/564x/86/5d/32/865d32b799aed80ded4c82b66bf64a47.jpg" class="photo">
+        <img src="https://i.pinimg.com/564x/1d/35/96/1d35961572f74529f10c9e58cff2c01c.jpg" class="photo">
+        <img src="https://i.pinimg.com/564x/c3/25/ef/c325efd313147eeffa18bd5fe5d24639.jpg" class="photo">
+        <img src="https://i.pinimg.com/564x/f0/5f/b7/f05fb7b17c110469bb3415e7bfe0930d.jpg" class="photo">
+        <img src="https://i.pinimg.com/564x/4d/dd/ea/4dddea176da78842d7b154bc539882ff.jpg" class="photos">
+
+      </div>
+      
+
+      
+
+    </div>
+    
+    
+      
+    
+
+  
    </body>
    
     
